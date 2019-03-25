@@ -1,0 +1,190 @@
+<!doctype html>
+ <html lang="en"> 
+   <head> 
+   <meta charset = "utf-8">
+      <title>my first website</title>
+	  <link rel="stylesheet" type ="text/css" href = "css/main.css">
+    </head>
+	 <body> 
+	   
+	    <div id ="big">
+	 <header id="top_header">
+	 
+	  <h1>joseph mkonda Unirvesity of Malawi Chanco</h1>
+	  </header>
+	 
+	  <nav id ="top_menu">
+	  
+	  <ul>
+	  
+	     <a href="home.html"> <li>Home</li></a>
+		 <a href="students.html"> <li>Students</li></a>
+		 <a href="lectures.html"> <li>Lectures</li></a>
+	  </ul>
+	  
+	  </nav>
+	  <div id = "image">
+	  <img src = "image/photo1.jpg" height="200px">
+	  <a href="http://www.facebook.com">FACEBOOK</a>  
+	  <a href="http://www.github.com">GITHUB</a>
+	  <a href="http://www.bsc-104-16@cc.ac.mw">EMAIL Adress</a>
+	  
+	  </div>
+	  
+	
+	 <section id ="main_section">
+	 <div id ="form">
+	 <form  id = "localStorage"  action ="" method =" ">
+	 <fieldset>
+	 <legend>project details</legend>
+	 <legend>project name</legend>
+	 <input id="projectName" type ="text" placeholder="key"/>
+	 <legend> date:</legend>
+	 <input id="month" type ="text" placeholder="date"/>
+	 <legend>project:</legend>
+	 <textarea rows="10" cols="15" id="massage" type ="text" placeholder="enterText..."></textarea>
+	 
+	 <button type="button" id="submit" >submit</button>
+	 
+	 </fieldset>
+	 </form>
+	 <script type ="text/javascript">
+	 
+			 
+			 
+  const projectName = document.getElementById("projectName");
+  const date = document.getElementById("date"); 
+const massage = document.getElementById("massage");
+ const submit = document.getElementById("submit");
+
+  submit.onclick = function(){
+  const key = projectName.value;
+const date=month.value;
+const enterText = massage.value;
+
+console.log(key);
+console.log(date);
+console.log(enterText);
+
+if(key && date){
+localStorage.setItem(key,date);
+location.reload();
+}
+if(enterText && date){
+localStorage.setItem(enterText,date);
+location.reload();
+}
+
+};
+for(let i =0;  i<localStorage.length;i++){
+ const key = localStorage.key(i);
+ const  enterText= localStorage.getItem(key);
+ //output.innerHTML += '${key}: ${enterText}<br />';
+}
+			 
+			  </script>
+	 
+	 
+	 </div>
+	      <h1>MY PROJECTS</h1>
+	   <article> 
+	      <header>
+		   <hgroup>
+		    <h2> project1</h2>
+		  
+		   </hgroup>
+		  </header>
+		  <p>my webpage</p>
+		  
+	   </article>
+	   
+	   <article> 
+	      <header>
+		   <hgroup>
+		  <h2>project2</h2>
+		  
+		   </hgroup>
+		  </header>
+		  <p>my web</p>
+		  
+	   </article>
+	   
+	   <article> 
+	      <header>
+		   <hgroup>
+		  <h2>project3</h2>
+		  
+		   </hgroup>
+		  </header>
+		   <p>my web</p>
+		  
+	   </article>
+	   
+	   <article> 
+	      <header>
+		   <hgroup>
+		  <h2>project4</h2>
+		  
+		   </hgroup>
+		  </header>
+		   
+			<p>my web</p>
+
+	   </article>
+	   
+	   <article> 
+	      <header>
+		   <hgroup>
+		  <h2>project5</h2>
+		  
+		   </hgroup>
+		  </header>
+		   <p>my web</p>
+		  
+	   </article>
+	   
+	  <article> 
+	      <header>
+		   <hgroup>
+		  <h2>project6</h2>
+		  
+		   </hgroup>
+		  </header>
+           <p>my web</p>
+		  
+	   </article>
+	   
+	 
+	 </section>
+	 <aside id =" new">
+	 <fieldset id ="up">
+	  <legend>localStorage output</legend>
+	  <div id="output"></div>
+	 </fieldset>
+	 
+	 </aside>
+	
+	 <footer id ="the_footer">
+	 	 <div id ="form2">
+	 <form  id = "localStorage"  action ="" method =" ">
+	 <fieldset>
+	 <legend>Working Experiance</legend>
+	 <legend>Work</legend>
+	 <input id="WorkName" type ="text" placeholder="key"/>
+	 <legend> date:</legend>
+	 <input id="endMonth" type ="text" placeholder="date"/>
+	 <button type="button" id="submit1" >submit</button>
+	 
+	 </fieldset>
+	 </form>
+	  my working experiance
+	  <ul>
+	  <li>HACKER LANK</li>
+	  <li>PROGRAMMER</li>
+	 <li> AIRTEL MALAWI</li>
+	  </ul>
+	 </footer>
+	 
+	 </body>
+	 </div>
+ </html>	
